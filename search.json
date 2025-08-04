@@ -1,16 +1,65 @@
 [
   {
+    "objectID": "webr.html",
+    "href": "webr.html",
+    "title": "Webr",
+    "section": "",
+    "text": "This is a webR-enabled code cell in a Quarto HTML document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "webexercises.html",
+    "href": "webexercises.html",
+    "title": "Webexercises",
+    "section": "",
+    "text": "This set of exercises will test your knowledge about various aspects of deception in psychology. Answer the questions to check your understanding of key concepts, theories, and research findings in this area."
+  },
+  {
+    "objectID": "webexercises.html#fill-in-the-blanks",
+    "href": "webexercises.html#fill-in-the-blanks",
+    "title": "Webexercises",
+    "section": "Fill-In-The-Blanks",
+    "text": "Fill-In-The-Blanks\n\nThe tendency for people to believe they are less likely to be deceived than others is known as the  to deception.\nIn deception research, the  is an actor who works with the experimenter to deceive the actual participant.\nThe  is a genuine smile that involves both the mouth and the eyes, making it harder to fake in deceptive situations."
+  },
+  {
+    "objectID": "webexercises.html#multiple-choice",
+    "href": "webexercises.html#multiple-choice",
+    "title": "Webexercises",
+    "section": "Multiple Choice",
+    "text": "Multiple Choice\n\nWhich of the following is NOT typically considered a reliable indicator of deception?\n\nIncreased blinkingReduced hand gesturesLack of eye contactIncreased speech errors\n\nThe theory that proposes that lying is more cognitively demanding than telling the truth is called:\n\nInterpersonal Deception TheoryCognitive Load TheoryFour-Factor TheorySelf-Presentation Theory\n\nIn a typical deception study, who is usually unaware of the true nature of the experiment?\n\nParticipantExperimenterConfederateResearch Assistant"
+  },
+  {
+    "objectID": "webexercises.html#true-or-false",
+    "href": "webexercises.html#true-or-false",
+    "title": "Webexercises",
+    "section": "True or False",
+    "text": "True or False\n\nPolygraph tests are highly accurate and widely accepted in scientific communities as reliable lie detectors. TRUEFALSE\nPeople are generally better at detecting lies told by strangers than by those close to them. TRUEFALSE\nMicroexpressions are brief, involuntary facial expressions that can potentially reveal concealed emotions in deceptive situations. TRUEFALSE"
+  },
+  {
+    "objectID": "webexercises.html#longer-mcqs",
+    "href": "webexercises.html#longer-mcqs",
+    "title": "Webexercises",
+    "section": "Longer MCQs",
+    "text": "Longer MCQs\nWhich of the following best describes the “Truth-Default Theory” in deception research?\n\n The theory that humans are naturally inclined to always tell the truth The theory that humans tend to believe others are telling the truth unless given reason to think otherwise The theory that truth-telling is easier and requires less cognitive effort than lying The theory that cultural norms universally prioritize truthfulness over deception\n\nWhat is the primary focus of Interpersonal Deception Theory (IDT)?\n\n The neurological processes involved in creating and maintaining a lie The cultural variations in perceptions and acceptance of deceptive practices The psychological motivations that drive individuals to engage in deceptive behavior The dynamic interaction between the deceiver and the target of deception"
+  },
+  {
+    "objectID": "webexercises.html#checked-sections",
+    "href": "webexercises.html#checked-sections",
+    "title": "Webexercises",
+    "section": "Checked sections",
+    "text": "Checked sections\n\nResearch suggests that detecting deception is:\nEasy for most peopleOnly possible with specialized trainingDifficult, with accuracy rates often only slightly above chanceImpossible without technological aids\nExplain why detecting deception is challenging for most people:\n\n\nClick for explanation\n\nDetecting deception is challenging for several reasons:\n\nMany common beliefs about deception cues (e.g., lack of eye contact) are not reliable indicators.\nLiars often strategically control their behavior to appear truthful.\nIndividual differences in baseline behavior make it hard to identify deviations.\nThe cognitive load of trying to detect lies can impair judgment.\nConfirmation bias can lead people to interpret ambiguous cues in line with their expectations."
+  },
+  {
+    "objectID": "webexercises.html#hidden-solutions-and-hints",
+    "href": "webexercises.html#hidden-solutions-and-hints",
+    "title": "Webexercises",
+    "section": "Hidden solutions and hints",
+    "text": "Hidden solutions and hints\nA researcher wants to study how cognitive load affects lying behavior. Describe a potential experimental design to investigate this.\n\n\nI need a hint\n\nConsider how you might manipulate cognitive load (e.g., through a secondary task) and measure lying behavior. Think about what control conditions you might need.\n\n\n\n\nClick here to see a possible experimental design\n\n# Possible Experimental Design:\n\n# Participants: 100 adults randomly assigned to two groups (50 each)\n# \n# Procedure:\n# 1. All participants are asked to lie about a recent experience\n# \n# 2. Experimental group: \n#    - Must count backwards from 100 by 7s while lying (high cognitive load)\n# \n# 3. Control group:\n#    - Simply lie without additional task (normal cognitive load)\n# \n# 4. Measure dependent variables:\n#    - Speech hesitations\n#    - Speech rate\n#    - Amount of detail provided\n#    - Perceived believability (rated by independent judges)\n# \n# 5. Compare measures between groups to assess the effect of cognitive load on lying behavior\n\n# This design allows us to isolate the effect of increased cognitive load on various aspects of lying behavior.\n\n\nThis set of exercises covers various aspects of deception psychology, including theories, research methods, and key findings. It utilizes different question types to engage learners and test their understanding of the subject matter."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "GoldRMy1",
     "section": "",
     "text": "This is a Quarto website, my dudes.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This is a webR-enabled code cell in a Quarto HTML document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   }
 ]
