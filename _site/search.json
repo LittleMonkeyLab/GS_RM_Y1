@@ -10,7 +10,7 @@
     "objectID": "lab.html#week-4-multiple-regression-part-1",
     "href": "lab.html#week-4-multiple-regression-part-1",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "1 Week 4: Multiple Regression (Part 1)",
+    "section": "\n1 Week 4: Multiple Regression (Part 1)",
     "text": "1 Week 4: Multiple Regression (Part 1)\n\nPlease attempt all questions in your own words. Model answers will be available on the VLE page following the lab session.",
     "crumbs": [
       "Home",
@@ -21,7 +21,7 @@
     "objectID": "lab.html#learning-outcomes",
     "href": "lab.html#learning-outcomes",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "2 Learning Outcomes",
+    "section": "\n2 Learning Outcomes",
     "text": "2 Learning Outcomes\n\nConduct simple and multiple linear regression analyses using R and the Tidyverse.\n\nExplore relationships between regression coefficients and correlation measures.\n\nAssess assumptions of linear regression including normality, linearity, and multicollinearity.\n\nCompute and interpret simple, partial, and semipartial correlations in R.",
     "crumbs": [
       "Home",
@@ -32,8 +32,8 @@
     "objectID": "lab.html#materials",
     "href": "lab.html#materials",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "3 Materials",
-    "text": "3 Materials\n\nSoftware: R (Tidyverse package)\nDataset: {{&lt; downloadthis data/fearful_faces.csv dname=fearful_faces label=\"Download the fearful_faces data\" icon=database-fill-down type=info class=data-button id=fearful_faces &gt;}}\n\n\nlibrary(tidyverse)\n\nError in library(tidyverse): there is no package called 'tidyverse'",
+    "section": "\n3 Materials",
+    "text": "3 Materials\n\n\nSoftware: R (Tidyverse package)\n\nDataset: {{}}\n\n\nlibrary(tidyverse)",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -43,8 +43,8 @@
     "objectID": "lab.html#dataset-overview",
     "href": "lab.html#dataset-overview",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "4 Dataset Overview",
-    "text": "4 Dataset Overview\nThe dataset includes reaction time (RT) data for participants responding to emotional facial expressions. Of particular interest is the average RT to fearful faces for correct identifications. Predictors include:\n\ntraitanx: Trait anxiety (Spielberger scale)\nACS: Attentional Control Scale score\nAge: Participant age",
+    "section": "\n4 Dataset Overview",
+    "text": "4 Dataset Overview\nThe dataset includes reaction time (RT) data for participants responding to emotional facial expressions. Of particular interest is the average RT to fearful faces for correct identifications. Predictors include:\n\n\ntraitanx: Trait anxiety (Spielberger scale)\n\nACS: Attentional Control Scale score\n\nAge: Participant age",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -54,8 +54,8 @@
     "objectID": "lab.html#task-1-descriptive-statistics-and-visualisation",
     "href": "lab.html#task-1-descriptive-statistics-and-visualisation",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "5 Task 1: Descriptive Statistics and Visualisation",
-    "text": "5 Task 1: Descriptive Statistics and Visualisation\n\nLoad the dataset\nCreate summary statistics and visualizations for RT, traitanx, ACS, and Age.\n\n\nfearful_data &lt;- read_csv(\"data/fearful_faces.csv\")\n\nError in read_csv(\"data/fearful_faces.csv\"): could not find function \"read_csv\"\n\nfearful_data %&gt;%\n  summarise(across(c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), list(mean = mean, sd = sd), na.rm = TRUE))\n\nError in fearful_data %&gt;% summarise(across(c(Fearful_face_RT, Happy_face_RT, : could not find function \"%&gt;%\"\n\nfearful_data %&gt;%\n  pivot_longer(cols = c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), names_to = \"variable\", values_to = \"value\") %&gt;%\n  ggplot(aes(x = value)) +\n  geom_histogram(bins = 30, fill = \"steelblue\", color = \"white\") +\n  facet_wrap(~ variable, scales = \"free\") +\n  theme_minimal()\n\nError in fearful_data %&gt;% pivot_longer(cols = c(Fearful_face_RT, Happy_face_RT, : could not find function \"%&gt;%\"",
+    "section": "\n5 Task 1: Descriptive Statistics and Visualisation",
+    "text": "5 Task 1: Descriptive Statistics and Visualisation\n\nLoad the dataset\nCreate summary statistics and visualizations for RT, traitanx, ACS, and Age.\n\n\nfearful_data &lt;- read_csv(\"data/fearful_faces.csv\")\n\nError: 'data/fearful_faces.csv' does not exist in current working directory ('/Users/gordonwright/GS_RM_Y1').\n\nfearful_data %&gt;%\n  summarise(across(c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), list(mean = mean, sd = sd), na.rm = TRUE))\n\nError: object 'fearful_data' not found\n\nfearful_data %&gt;%\n  pivot_longer(cols = c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), names_to = \"variable\", values_to = \"value\") %&gt;%\n  ggplot(aes(x = value)) +\n  geom_histogram(bins = 30, fill = \"steelblue\", color = \"white\") +\n  facet_wrap(~ variable, scales = \"free\") +\n  theme_minimal()\n\nError: object 'fearful_data' not found",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -65,8 +65,8 @@
     "objectID": "lab.html#task-2-correlation-analysis",
     "href": "lab.html#task-2-correlation-analysis",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "6 Task 2: Correlation Analysis",
-    "text": "6 Task 2: Correlation Analysis\n\nCompute a correlation matrix\nVisualize relationships using scatterplots\n\n\nfearful_data %&gt;%\n  select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age) %&gt;%\n  cor(use = \"complete.obs\") %&gt;%\n  round(2)\n\nError in fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, : could not find function \"%&gt;%\"\n\npairs(fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), main = \"Scatterplot Matrix\")\n\nError in fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, : could not find function \"%&gt;%\"",
+    "section": "\n6 Task 2: Correlation Analysis",
+    "text": "6 Task 2: Correlation Analysis\n\nCompute a correlation matrix\nVisualize relationships using scatterplots\n\n\nfearful_data %&gt;%\n  select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age) %&gt;%\n  cor(use = \"complete.obs\") %&gt;%\n  round(2)\n\nError: object 'fearful_data' not found\n\npairs(fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), main = \"Scatterplot Matrix\")\n\nError: object 'fearful_data' not found",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -76,7 +76,7 @@
     "objectID": "lab.html#task-3-multiple-regression",
     "href": "lab.html#task-3-multiple-regression",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "7 Task 3: Multiple Regression",
+    "section": "\n7 Task 3: Multiple Regression",
     "text": "7 Task 3: Multiple Regression\n\nConduct a multiple regression predicting Fearful_face_RT from traitanx, ACS, and Age.\n\n\nmodel &lt;- lm(Fearful_face_RT ~ traitanx + ACS + Age, data = fearful_data)\n\nError in eval(mf, parent.frame()): object 'fearful_data' not found\n\nsummary(model)\n\nError: object 'model' not found",
     "crumbs": [
       "Home",
@@ -87,7 +87,7 @@
     "objectID": "lab.html#task-4-model-diagnostics",
     "href": "lab.html#task-4-model-diagnostics",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "8 Task 4: Model Diagnostics",
+    "section": "\n8 Task 4: Model Diagnostics",
     "text": "8 Task 4: Model Diagnostics\n\nCheck linear regression assumptions.\n\n\npar(mfrow = c(2, 2))\nplot(model)\n\nError: object 'model' not found",
     "crumbs": [
       "Home",
@@ -98,8 +98,8 @@
     "objectID": "lab.html#task-5-partial-and-semipartial-correlations",
     "href": "lab.html#task-5-partial-and-semipartial-correlations",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "9 Task 5: Partial and Semipartial Correlations",
-    "text": "9 Task 5: Partial and Semipartial Correlations\n\n# Load required libraries\nlibrary(tidyverse)\n\nError in library(tidyverse): there is no package called 'tidyverse'\n\nlibrary(ppcor)\n\nError in library(ppcor): there is no package called 'ppcor'\n\n# Calculate partial correlations\npartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError in fearful_data %&gt;% dplyr::select(Fearful_face_RT, traitanx, ACS, : could not find function \"%&gt;%\"\n\npcor_result &lt;- pcor(partial_data, method = \"pearson\")\n\nError in pcor(partial_data, method = \"pearson\"): could not find function \"pcor\"\n\npcor_result\n\nError: object 'pcor_result' not found",
+    "section": "\n9 Task 5: Partial and Semipartial Correlations",
+    "text": "9 Task 5: Partial and Semipartial Correlations\n\n# Load required libraries\nlibrary(tidyverse)\nlibrary(ppcor)\n\n\n# Calculate partial correlations\npartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError: object 'fearful_data' not found\n\npcor_result &lt;- pcor(partial_data, method = \"pearson\")\n\nError: object 'partial_data' not found\n\npcor_result\n\nError: object 'pcor_result' not found",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -109,8 +109,8 @@
     "objectID": "lab.html#task-6-semipartial-part-correlation",
     "href": "lab.html#task-6-semipartial-part-correlation",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "10 Task 6: Semipartial (Part) Correlation",
-    "text": "10 Task 6: Semipartial (Part) Correlation\n\nThis task explores how to isolate the unique contribution of one predictor (e.g., trait anxiety) to a dependent variable (reaction time), controlling for other variables only in the predictor.\n\n\n10.1 Objective\n\nCalculate a semipartial correlation between Fearful_face_RT and traitanx, controlling for ACS and Age only in the predictor.\n\n\n# Load tidyverse if not already\nlibrary(tidyverse)\n\nError in library(tidyverse): there is no package called 'tidyverse'\n\n# Ensure your data is clean\nsemipartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError in fearful_data %&gt;% dplyr::select(Fearful_face_RT, traitanx, ACS, : could not find function \"%&gt;%\"\n\n# Step 1: Residualize the predictor (traitanx ~ ACS + Age)\nresid_traitanx &lt;- lm(traitanx ~ ACS + Age, data = semipartial_data)$residuals\n\nError in eval(mf, parent.frame()): object 'semipartial_data' not found\n\n# Step 2: Compute correlation between raw DV and residualized predictor\nsemipartial_corr &lt;- cor(semipartial_data$Fearful_face_RT, resid_traitanx)\n\nError: object 'resid_traitanx' not found\n\nsemipartial_corr\n\nError: object 'semipartial_corr' not found\n\n\n\n\n\n\n\n\nNote\n\n\n\nInterpretation: This semipartial correlation represents the unique association between trait anxiety and fearful face reaction time, controlling for ACS and Age only in trait anxiety. Unlike partial correlation, it leaves the DV unadjusted.",
+    "section": "\n10 Task 6: Semipartial (Part) Correlation",
+    "text": "10 Task 6: Semipartial (Part) Correlation\n\nThis task explores how to isolate the unique contribution of one predictor (e.g., trait anxiety) to a dependent variable (reaction time), controlling for other variables only in the predictor.\n\n\n10.1 Objective\n\nCalculate a semipartial correlation between Fearful_face_RT and traitanx, controlling for ACS and Age only in the predictor.\n\n\n# Load tidyverse if not already\nlibrary(tidyverse)\n\n# Ensure your data is clean\nsemipartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError: object 'fearful_data' not found\n\n# Step 1: Residualize the predictor (traitanx ~ ACS + Age)\nresid_traitanx &lt;- lm(traitanx ~ ACS + Age, data = semipartial_data)$residuals\n\nError in eval(mf, parent.frame()): object 'semipartial_data' not found\n\n# Step 2: Compute correlation between raw DV and residualized predictor\nsemipartial_corr &lt;- cor(semipartial_data$Fearful_face_RT, resid_traitanx)\n\nError: object 'resid_traitanx' not found\n\nsemipartial_corr\n\nError: object 'semipartial_corr' not found\n\n\n\n\n\n\n\n\nNote\n\n\n\nInterpretation: This semipartial correlation represents the unique association between trait anxiety and fearful face reaction time, controlling for ACS and Age only in trait anxiety. Unlike partial correlation, it leaves the DV unadjusted.",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -120,7 +120,7 @@
     "objectID": "lab.html#reflection",
     "href": "lab.html#reflection",
     "title": "PS53011C/PS71020E Lab Worksheet",
-    "section": "11 Reflection",
+    "section": "\n11 Reflection",
     "text": "11 Reflection\n\nHow does anxiety influence reaction time to fearful faces?\nDoes attentional control modify this relationship?\nAre the findings specific to fearful stimuli, or would they generalize to other emotional expressions?\n\n\nReview your code and interpretations. Cross-reference with theoretical models on anxiety and attentional control.",
     "crumbs": [
       "Home",
@@ -146,28 +146,28 @@
     "href": "webexercises.html#multiple-choice",
     "title": "Webexercises",
     "section": "Multiple Choice",
-    "text": "Multiple Choice\n\nWhich of the following is NOT typically considered a reliable indicator of deception?\n\nIncreased blinkingReduced hand gesturesLack of eye contactIncreased speech errors\n\nThe theory that proposes that lying is more cognitively demanding than telling the truth is called:\n\nInterpersonal Deception TheoryCognitive Load TheoryFour-Factor TheorySelf-Presentation Theory\n\nIn a typical deception study, who is usually unaware of the true nature of the experiment?\n\nParticipantExperimenterConfederateResearch Assistant"
+    "text": "Multiple Choice\n\nWhich of the following is NOT typically considered a reliable indicator of deception?\n\n\nIncreased blinking\nReduced hand gestures\nLack of eye contact\nIncreased speech errors\n\nThe theory that proposes that lying is more cognitively demanding than telling the truth is called:\n\n\nInterpersonal Deception Theory\nCognitive Load Theory\nFour-Factor Theory\nSelf-Presentation Theory\n\nIn a typical deception study, who is usually unaware of the true nature of the experiment?\n\n\nParticipant\nExperimenter\nConfederate\nResearch Assistant"
   },
   {
     "objectID": "webexercises.html#true-or-false",
     "href": "webexercises.html#true-or-false",
     "title": "Webexercises",
     "section": "True or False",
-    "text": "True or False\n\nPolygraph tests are highly accurate and widely accepted in scientific communities as reliable lie detectors. TRUEFALSE\nPeople are generally better at detecting lies told by strangers than by those close to them. TRUEFALSE\nMicroexpressions are brief, involuntary facial expressions that can potentially reveal concealed emotions in deceptive situations. TRUEFALSE"
+    "text": "True or False\n\nPolygraph tests are highly accurate and widely accepted in scientific communities as reliable lie detectors. \nTRUE\nFALSE\nPeople are generally better at detecting lies told by strangers than by those close to them. \nTRUE\nFALSE\nMicroexpressions are brief, involuntary facial expressions that can potentially reveal concealed emotions in deceptive situations. \nTRUE\nFALSE"
   },
   {
     "objectID": "webexercises.html#longer-mcqs",
     "href": "webexercises.html#longer-mcqs",
     "title": "Webexercises",
     "section": "Longer MCQs",
-    "text": "Longer MCQs\nWhich of the following best describes the “Truth-Default Theory” in deception research?\n\n The theory that humans are naturally inclined to always tell the truth The theory that humans tend to believe others are telling the truth unless given reason to think otherwise The theory that truth-telling is easier and requires less cognitive effort than lying The theory that cultural norms universally prioritize truthfulness over deception\n\nWhat is the primary focus of Interpersonal Deception Theory (IDT)?\n\n The neurological processes involved in creating and maintaining a lie The cultural variations in perceptions and acceptance of deceptive practices The psychological motivations that drive individuals to engage in deceptive behavior The dynamic interaction between the deceiver and the target of deception"
+    "text": "Longer MCQs\nWhich of the following best describes the “Truth-Default Theory” in deception research?\n\nThe theory that humans are naturally inclined to always tell the truthThe theory that humans tend to believe others are telling the truth unless given reason to think otherwiseThe theory that truth-telling is easier and requires less cognitive effort than lyingThe theory that cultural norms universally prioritize truthfulness over deception\n\nWhat is the primary focus of Interpersonal Deception Theory (IDT)?\n\nThe dynamic interaction between the deceiver and the target of deceptionThe cultural variations in perceptions and acceptance of deceptive practicesThe psychological motivations that drive individuals to engage in deceptive behaviorThe neurological processes involved in creating and maintaining a lie"
   },
   {
     "objectID": "webexercises.html#checked-sections",
     "href": "webexercises.html#checked-sections",
     "title": "Webexercises",
     "section": "Checked sections",
-    "text": "Checked sections\n\nResearch suggests that detecting deception is:\nEasy for most peopleOnly possible with specialized trainingDifficult, with accuracy rates often only slightly above chanceImpossible without technological aids\nExplain why detecting deception is challenging for most people:\n\n\nClick for explanation\n\nDetecting deception is challenging for several reasons:\n\nMany common beliefs about deception cues (e.g., lack of eye contact) are not reliable indicators.\nLiars often strategically control their behavior to appear truthful.\nIndividual differences in baseline behavior make it hard to identify deviations.\nThe cognitive load of trying to detect lies can impair judgment.\nConfirmation bias can lead people to interpret ambiguous cues in line with their expectations."
+    "text": "Checked sections\n\nResearch suggests that detecting deception is:\n\nEasy for most people\nOnly possible with specialized training\nDifficult, with accuracy rates often only slightly above chance\nImpossible without technological aids\nExplain why detecting deception is challenging for most people:\n\n\nClick for explanation\n\nDetecting deception is challenging for several reasons:\n\nMany common beliefs about deception cues (e.g., lack of eye contact) are not reliable indicators.\nLiars often strategically control their behavior to appear truthful.\nIndividual differences in baseline behavior make it hard to identify deviations.\nThe cognitive load of trying to detect lies can impair judgment.\nConfirmation bias can lead people to interpret ambiguous cues in line with their expectations."
   },
   {
     "objectID": "webexercises.html#hidden-solutions-and-hints",
@@ -181,7 +181,7 @@
     "href": "iframeslides.html",
     "title": "Embedded Slides",
     "section": "",
-    "text": "Here are some slides from a .qmd file\n\n\n\nor maybe here are some slides (as html)"
+    "text": "Here are some slides from an html file (embedded resources)\n\n \n\nusing slide-deck short-version"
   },
   {
     "objectID": "placeholders/placeholderslidesqmd.html#title-2",
