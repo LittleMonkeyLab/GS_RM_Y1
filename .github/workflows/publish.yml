@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -21,6 +22,9 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y \
+            libxml2-dev \
+            libcurl4-openssl-dev \
+            libssl-dev \
             libfontconfig1-dev \
             libfreetype6-dev \
             libx11-dev \
@@ -31,10 +35,18 @@ jobs:
         with:
           r-version: '4.2.0'
 
-      - name: Install R Dependencies
-        uses: r-lib/actions/setup-renv@v2
+      - name: Cache R packages
+        uses: actions/cache@v4
         with:
-          cache-version: 1
+          path: ~/.cache/R/renv
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: ${{ runner.os }}-renv-
+
+      - name: Install renv and restore packages
+        run: |
+          Rscript -e 'install.packages("renv", repos = "https://packagemanager.posit.co/cran/latest")'
+          echo 'Sys.setenv(RENV_CONFIG_REPOS_OVERRIDE = "https://packagemanager.posit.co/cran/latest")' >> .Rprofile
+          Rscript -e 'renv::restore()'
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
