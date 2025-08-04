@@ -3,9 +3,19 @@ title: "Embedded Slides"
 format: html
 ---
 
-Here are some slides from a .qmd file
+Here are some slides from an html file (embedded resources)
 <div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
   <iframe src="placeholders/lab_slides.html" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          allowfullscreen
+          loading="lazy">
+  </iframe>
+</div>
+
+Here are some slides from a .qmd in the current project
+
+<div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="placeholders/placeholderslidesqmd.qmd" 
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
           allowfullscreen
           loading="lazy">
