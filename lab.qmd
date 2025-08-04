@@ -80,6 +80,11 @@ This week's lab will explore multiple regression using tidyverse principles!
 
 ## Materials
 
+```{r}
+#| echo: false
+library(downloadthis)
+
+```
 - **Software**: R (Tidyverse package)
 - **Dataset**: {{< downloadthis data/fearful_faces.csv dname=fearful_faces label="Download the fearful_faces data" icon=database-fill-down type=info class=data-button id=fearful_faces >}}
 
@@ -87,6 +92,7 @@ This week's lab will explore multiple regression using tidyverse principles!
 #| label: load-libraries
 #| message: false
 #| warning: false
+
 library(tidyverse)
 ```
 
