@@ -103,7 +103,7 @@
     "href": "lab.html#materials",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "3 Materials",
-    "text": "3 Materials\n\nSoftware: R (Tidyverse package)\nDataset: {{&lt; downloadthis data/fearful_faces.csv dname=fearful_faces label=\"Download the fearful_faces data\" icon=database-fill-down type=info class=data-button id=fearful_faces &gt;}}\n\n\nlibrary(tidyverse)\n\nError in library(tidyverse): there is no package called 'tidyverse'",
+    "text": "3 Materials\n\nSoftware: R (Tidyverse package)\nDataset: {{&lt; downloadthis data/fearful_faces.csv dname=fearful_faces label=\"Download the fearful_faces data\" icon=database-fill-down type=info class=data-button id=fearful_faces &gt;}}\n\n\nlibrary(tidyverse)",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -125,7 +125,7 @@
     "href": "lab.html#task-1-descriptive-statistics-and-visualisation",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "5 Task 1: Descriptive Statistics and Visualisation",
-    "text": "5 Task 1: Descriptive Statistics and Visualisation\n\nLoad the dataset\nCreate summary statistics and visualizations for RT, traitanx, ACS, and Age.\n\n\nfearful_data &lt;- read_csv(\"data/fearful_faces.csv\")\n\nError in read_csv(\"data/fearful_faces.csv\"): could not find function \"read_csv\"\n\nfearful_data %&gt;%\n  summarise(across(c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), list(mean = mean, sd = sd), na.rm = TRUE))\n\nError in fearful_data %&gt;% summarise(across(c(Fearful_face_RT, Happy_face_RT, : could not find function \"%&gt;%\"\n\nfearful_data %&gt;%\n  pivot_longer(cols = c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), names_to = \"variable\", values_to = \"value\") %&gt;%\n  ggplot(aes(x = value)) +\n  geom_histogram(bins = 30, fill = \"steelblue\", color = \"white\") +\n  facet_wrap(~ variable, scales = \"free\") +\n  theme_minimal()\n\nError in fearful_data %&gt;% pivot_longer(cols = c(Fearful_face_RT, Happy_face_RT, : could not find function \"%&gt;%\"",
+    "text": "5 Task 1: Descriptive Statistics and Visualisation\n\nLoad the dataset\nCreate summary statistics and visualizations for RT, traitanx, ACS, and Age.\n\n\nfearful_data &lt;- read_csv(\"data/fearful_faces.csv\")\n\nError: 'data/fearful_faces.csv' does not exist in current working directory ('/home/runner/work/GS_RM_Y1/GS_RM_Y1').\n\nfearful_data %&gt;%\n  summarise(across(c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), list(mean = mean, sd = sd), na.rm = TRUE))\n\nError: object 'fearful_data' not found\n\nfearful_data %&gt;%\n  pivot_longer(cols = c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), names_to = \"variable\", values_to = \"value\") %&gt;%\n  ggplot(aes(x = value)) +\n  geom_histogram(bins = 30, fill = \"steelblue\", color = \"white\") +\n  facet_wrap(~ variable, scales = \"free\") +\n  theme_minimal()\n\nError: object 'fearful_data' not found",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -136,7 +136,7 @@
     "href": "lab.html#task-2-correlation-analysis",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "6 Task 2: Correlation Analysis",
-    "text": "6 Task 2: Correlation Analysis\n\nCompute a correlation matrix\nVisualize relationships using scatterplots\n\n\nfearful_data %&gt;%\n  select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age) %&gt;%\n  cor(use = \"complete.obs\") %&gt;%\n  round(2)\n\nError in fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, : could not find function \"%&gt;%\"\n\npairs(fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), main = \"Scatterplot Matrix\")\n\nError in fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, : could not find function \"%&gt;%\"",
+    "text": "6 Task 2: Correlation Analysis\n\nCompute a correlation matrix\nVisualize relationships using scatterplots\n\n\nfearful_data %&gt;%\n  select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age) %&gt;%\n  cor(use = \"complete.obs\") %&gt;%\n  round(2)\n\nError: object 'fearful_data' not found\n\npairs(fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), main = \"Scatterplot Matrix\")\n\nError: object 'fearful_data' not found",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -147,7 +147,7 @@
     "href": "lab.html#task-3-multiple-regression",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "7 Task 3: Multiple Regression",
-    "text": "7 Task 3: Multiple Regression\n\nConduct a multiple regression predicting Fearful_face_RT from traitanx, ACS, and Age.\n\n\nmodel &lt;- lm(Fearful_face_RT ~ traitanx + ACS + Age, data = fearful_data)\n\nError in is.data.frame(data): object 'fearful_data' not found\n\nsummary(model)\n\nError in summary(model): object 'model' not found",
+    "text": "7 Task 3: Multiple Regression\n\nConduct a multiple regression predicting Fearful_face_RT from traitanx, ACS, and Age.\n\n\nmodel &lt;- lm(Fearful_face_RT ~ traitanx + ACS + Age, data = fearful_data)\n\nError in eval(mf, parent.frame()): object 'fearful_data' not found\n\nsummary(model)\n\nError: object 'model' not found",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -158,7 +158,7 @@
     "href": "lab.html#task-4-model-diagnostics",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "8 Task 4: Model Diagnostics",
-    "text": "8 Task 4: Model Diagnostics\n\nCheck linear regression assumptions.\n\n\npar(mfrow = c(2, 2))\nplot(model)\n\nError in plot(model): object 'model' not found",
+    "text": "8 Task 4: Model Diagnostics\n\nCheck linear regression assumptions.\n\n\npar(mfrow = c(2, 2))\nplot(model)\n\nError: object 'model' not found",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -169,7 +169,7 @@
     "href": "lab.html#task-5-partial-and-semipartial-correlations",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "9 Task 5: Partial and Semipartial Correlations",
-    "text": "9 Task 5: Partial and Semipartial Correlations\n\n# Load required libraries\nlibrary(tidyverse)\n\nError in library(tidyverse): there is no package called 'tidyverse'\n\nlibrary(ppcor)\n\nError in library(ppcor): there is no package called 'ppcor'\n\n# Calculate partial correlations\npartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError in fearful_data %&gt;% dplyr::select(Fearful_face_RT, traitanx, ACS, : could not find function \"%&gt;%\"\n\npcor_result &lt;- pcor(partial_data, method = \"pearson\")\n\nError in pcor(partial_data, method = \"pearson\"): could not find function \"pcor\"\n\npcor_result\n\nError: object 'pcor_result' not found",
+    "text": "9 Task 5: Partial and Semipartial Correlations\n\n# Load required libraries\nlibrary(tidyverse)\nlibrary(ppcor)\n\n\n# Calculate partial correlations\npartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError: object 'fearful_data' not found\n\npcor_result &lt;- pcor(partial_data, method = \"pearson\")\n\nError: object 'partial_data' not found\n\npcor_result\n\nError: object 'pcor_result' not found",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -180,7 +180,7 @@
     "href": "lab.html#task-6-semipartial-part-correlation",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "10 Task 6: Semipartial (Part) Correlation",
-    "text": "10 Task 6: Semipartial (Part) Correlation\n\nThis task explores how to isolate the unique contribution of one predictor (e.g., trait anxiety) to a dependent variable (reaction time), controlling for other variables only in the predictor.\n\n\n10.1 Objective\n\nCalculate a semipartial correlation between Fearful_face_RT and traitanx, controlling for ACS and Age only in the predictor.\n\n\n# Load tidyverse if not already\nlibrary(tidyverse)\n\nError in library(tidyverse): there is no package called 'tidyverse'\n\n# Ensure your data is clean\nsemipartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError in fearful_data %&gt;% dplyr::select(Fearful_face_RT, traitanx, ACS, : could not find function \"%&gt;%\"\n\n# Step 1: Residualize the predictor (traitanx ~ ACS + Age)\nresid_traitanx &lt;- lm(traitanx ~ ACS + Age, data = semipartial_data)$residuals\n\nError in is.data.frame(data): object 'semipartial_data' not found\n\n# Step 2: Compute correlation between raw DV and residualized predictor\nsemipartial_corr &lt;- cor(semipartial_data$Fearful_face_RT, resid_traitanx)\n\nError in is.data.frame(y): object 'resid_traitanx' not found\n\nsemipartial_corr\n\nError: object 'semipartial_corr' not found\n\n\n\n\n\n\n\n\nNote\n\n\n\nInterpretation: This semipartial correlation represents the unique association between trait anxiety and fearful face reaction time, controlling for ACS and Age only in trait anxiety. Unlike partial correlation, it leaves the DV unadjusted.",
+    "text": "10 Task 6: Semipartial (Part) Correlation\n\nThis task explores how to isolate the unique contribution of one predictor (e.g., trait anxiety) to a dependent variable (reaction time), controlling for other variables only in the predictor.\n\n\n10.1 Objective\n\nCalculate a semipartial correlation between Fearful_face_RT and traitanx, controlling for ACS and Age only in the predictor.\n\n\n# Load tidyverse if not already\nlibrary(tidyverse)\n\n# Ensure your data is clean\nsemipartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError: object 'fearful_data' not found\n\n# Step 1: Residualize the predictor (traitanx ~ ACS + Age)\nresid_traitanx &lt;- lm(traitanx ~ ACS + Age, data = semipartial_data)$residuals\n\nError in eval(mf, parent.frame()): object 'semipartial_data' not found\n\n# Step 2: Compute correlation between raw DV and residualized predictor\nsemipartial_corr &lt;- cor(semipartial_data$Fearful_face_RT, resid_traitanx)\n\nError: object 'resid_traitanx' not found\n\nsemipartial_corr\n\nError: object 'semipartial_corr' not found\n\n\n\n\n\n\n\n\nNote\n\n\n\nInterpretation: This semipartial correlation represents the unique association between trait anxiety and fearful face reaction time, controlling for ACS and Age only in trait anxiety. Unlike partial correlation, it leaves the DV unadjusted.",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
