@@ -4,14 +4,21 @@
     "href": "iframeslides.html",
     "title": "Embedded Slides",
     "section": "",
-    "text": "Here are some slides from a .qmd file\n\n\n\nor maybe here are some slides (as html)"
+    "text": "Here are some slides from a .qmd file"
   },
   {
-    "objectID": "placeholders/placeholderslidesqmd.html#title-2",
-    "href": "placeholders/placeholderslidesqmd.html#title-2",
-    "title": "placeholderslidesqmd",
-    "section": "Title 2",
-    "text": "Title 2\nbody content"
+    "objectID": "webr.html",
+    "href": "webr.html",
+    "title": "Webr",
+    "section": "",
+    "text": "This is a webR-enabled code cell in a Quarto HTML document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GoldRMy1",
+    "section": "",
+    "text": "This is a Quarto website, my dudes.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "webexercises.html",
@@ -46,7 +53,7 @@
     "href": "webexercises.html#longer-mcqs",
     "title": "Webexercises",
     "section": "Longer MCQs",
-    "text": "Longer MCQs\nWhich of the following best describes the “Truth-Default Theory” in deception research?\n\n The theory that humans are naturally inclined to always tell the truth The theory that humans tend to believe others are telling the truth unless given reason to think otherwise The theory that truth-telling is easier and requires less cognitive effort than lying The theory that cultural norms universally prioritize truthfulness over deception\n\nWhat is the primary focus of Interpersonal Deception Theory (IDT)?\n\n The dynamic interaction between the deceiver and the target of deception The cultural variations in perceptions and acceptance of deceptive practices The neurological processes involved in creating and maintaining a lie The psychological motivations that drive individuals to engage in deceptive behavior"
+    "text": "Longer MCQs\nWhich of the following best describes the “Truth-Default Theory” in deception research?\n\n The theory that humans are naturally inclined to always tell the truth The theory that humans tend to believe others are telling the truth unless given reason to think otherwise The theory that truth-telling is easier and requires less cognitive effort than lying The theory that cultural norms universally prioritize truthfulness over deception\n\nWhat is the primary focus of Interpersonal Deception Theory (IDT)?\n\n The cultural variations in perceptions and acceptance of deceptive practices The psychological motivations that drive individuals to engage in deceptive behavior The neurological processes involved in creating and maintaining a lie The dynamic interaction between the deceiver and the target of deception"
   },
   {
     "objectID": "webexercises.html#checked-sections",
@@ -63,17 +70,131 @@
     "text": "Hidden solutions and hints\nA researcher wants to study how cognitive load affects lying behavior. Describe a potential experimental design to investigate this.\n\n\nI need a hint\n\nConsider how you might manipulate cognitive load (e.g., through a secondary task) and measure lying behavior. Think about what control conditions you might need.\n\n\n\n\nClick here to see a possible experimental design\n\n# Possible Experimental Design:\n\n# Participants: 100 adults randomly assigned to two groups (50 each)\n# \n# Procedure:\n# 1. All participants are asked to lie about a recent experience\n# \n# 2. Experimental group: \n#    - Must count backwards from 100 by 7s while lying (high cognitive load)\n# \n# 3. Control group:\n#    - Simply lie without additional task (normal cognitive load)\n# \n# 4. Measure dependent variables:\n#    - Speech hesitations\n#    - Speech rate\n#    - Amount of detail provided\n#    - Perceived believability (rated by independent judges)\n# \n# 5. Compare measures between groups to assess the effect of cognitive load on lying behavior\n\n# This design allows us to isolate the effect of increased cognitive load on various aspects of lying behavior.\n\n\nThis set of exercises covers various aspects of deception psychology, including theories, research methods, and key findings. It utilizes different question types to engage learners and test their understanding of the subject matter."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "GoldRMy1",
-    "section": "",
-    "text": "This is a Quarto website, my dudes.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "objectID": "placeholders/placeholderslidesqmd.html#title-2",
+    "href": "placeholders/placeholderslidesqmd.html#title-2",
+    "title": "placeholderslidesqmd",
+    "section": "Title 2",
+    "text": "Title 2\nbody content"
   },
   {
-    "objectID": "webr.html",
-    "href": "webr.html",
-    "title": "Webr",
-    "section": "",
-    "text": "This is a webR-enabled code cell in a Quarto HTML document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "objectID": "lab.html#week-4-multiple-regression-part-1",
+    "href": "lab.html#week-4-multiple-regression-part-1",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "1 Week 4: Multiple Regression (Part 1)",
+    "text": "1 Week 4: Multiple Regression (Part 1)\n\nPlease attempt all questions in your own words. Model answers will be available on the VLE page following the lab session.",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
+  },
+  {
+    "objectID": "lab.html#learning-outcomes",
+    "href": "lab.html#learning-outcomes",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "2 Learning Outcomes",
+    "text": "2 Learning Outcomes\n\nConduct simple and multiple linear regression analyses using R and the Tidyverse.\n\nExplore relationships between regression coefficients and correlation measures.\n\nAssess assumptions of linear regression including normality, linearity, and multicollinearity.\n\nCompute and interpret simple, partial, and semipartial correlations in R.",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
+  },
+  {
+    "objectID": "lab.html#materials",
+    "href": "lab.html#materials",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "3 Materials",
+    "text": "3 Materials\n\nSoftware: R (Tidyverse package)\nDataset: {{&lt; downloadthis data/fearful_faces.csv dname=fearful_faces label=\"Download the fearful_faces data\" icon=database-fill-down type=info class=data-button id=fearful_faces &gt;}}\n\n\nlibrary(tidyverse)\n\nError in library(tidyverse): there is no package called 'tidyverse'",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
+  },
+  {
+    "objectID": "lab.html#dataset-overview",
+    "href": "lab.html#dataset-overview",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "4 Dataset Overview",
+    "text": "4 Dataset Overview\nThe dataset includes reaction time (RT) data for participants responding to emotional facial expressions. Of particular interest is the average RT to fearful faces for correct identifications. Predictors include:\n\ntraitanx: Trait anxiety (Spielberger scale)\nACS: Attentional Control Scale score\nAge: Participant age",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
+  },
+  {
+    "objectID": "lab.html#task-1-descriptive-statistics-and-visualisation",
+    "href": "lab.html#task-1-descriptive-statistics-and-visualisation",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "5 Task 1: Descriptive Statistics and Visualisation",
+    "text": "5 Task 1: Descriptive Statistics and Visualisation\n\nLoad the dataset\nCreate summary statistics and visualizations for RT, traitanx, ACS, and Age.\n\n\nfearful_data &lt;- read_csv(\"data/fearful_faces.csv\")\n\nError in read_csv(\"data/fearful_faces.csv\"): could not find function \"read_csv\"\n\nfearful_data %&gt;%\n  summarise(across(c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), list(mean = mean, sd = sd), na.rm = TRUE))\n\nError in fearful_data %&gt;% summarise(across(c(Fearful_face_RT, Happy_face_RT, : could not find function \"%&gt;%\"\n\nfearful_data %&gt;%\n  pivot_longer(cols = c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), names_to = \"variable\", values_to = \"value\") %&gt;%\n  ggplot(aes(x = value)) +\n  geom_histogram(bins = 30, fill = \"steelblue\", color = \"white\") +\n  facet_wrap(~ variable, scales = \"free\") +\n  theme_minimal()\n\nError in fearful_data %&gt;% pivot_longer(cols = c(Fearful_face_RT, Happy_face_RT, : could not find function \"%&gt;%\"",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
+  },
+  {
+    "objectID": "lab.html#task-2-correlation-analysis",
+    "href": "lab.html#task-2-correlation-analysis",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "6 Task 2: Correlation Analysis",
+    "text": "6 Task 2: Correlation Analysis\n\nCompute a correlation matrix\nVisualize relationships using scatterplots\n\n\nfearful_data %&gt;%\n  select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age) %&gt;%\n  cor(use = \"complete.obs\") %&gt;%\n  round(2)\n\nError in fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, : could not find function \"%&gt;%\"\n\npairs(fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), main = \"Scatterplot Matrix\")\n\nError in fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, : could not find function \"%&gt;%\"",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
+  },
+  {
+    "objectID": "lab.html#task-3-multiple-regression",
+    "href": "lab.html#task-3-multiple-regression",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "7 Task 3: Multiple Regression",
+    "text": "7 Task 3: Multiple Regression\n\nConduct a multiple regression predicting Fearful_face_RT from traitanx, ACS, and Age.\n\n\nmodel &lt;- lm(Fearful_face_RT ~ traitanx + ACS + Age, data = fearful_data)\n\nError in is.data.frame(data): object 'fearful_data' not found\n\nsummary(model)\n\nError in summary(model): object 'model' not found",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
+  },
+  {
+    "objectID": "lab.html#task-4-model-diagnostics",
+    "href": "lab.html#task-4-model-diagnostics",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "8 Task 4: Model Diagnostics",
+    "text": "8 Task 4: Model Diagnostics\n\nCheck linear regression assumptions.\n\n\npar(mfrow = c(2, 2))\nplot(model)\n\nError in plot(model): object 'model' not found",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
+  },
+  {
+    "objectID": "lab.html#task-5-partial-and-semipartial-correlations",
+    "href": "lab.html#task-5-partial-and-semipartial-correlations",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "9 Task 5: Partial and Semipartial Correlations",
+    "text": "9 Task 5: Partial and Semipartial Correlations\n\n# Load required libraries\nlibrary(tidyverse)\n\nError in library(tidyverse): there is no package called 'tidyverse'\n\nlibrary(ppcor)\n\nError in library(ppcor): there is no package called 'ppcor'\n\n# Calculate partial correlations\npartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError in fearful_data %&gt;% dplyr::select(Fearful_face_RT, traitanx, ACS, : could not find function \"%&gt;%\"\n\npcor_result &lt;- pcor(partial_data, method = \"pearson\")\n\nError in pcor(partial_data, method = \"pearson\"): could not find function \"pcor\"\n\npcor_result\n\nError: object 'pcor_result' not found",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
+  },
+  {
+    "objectID": "lab.html#task-6-semipartial-part-correlation",
+    "href": "lab.html#task-6-semipartial-part-correlation",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "10 Task 6: Semipartial (Part) Correlation",
+    "text": "10 Task 6: Semipartial (Part) Correlation\n\nThis task explores how to isolate the unique contribution of one predictor (e.g., trait anxiety) to a dependent variable (reaction time), controlling for other variables only in the predictor.\n\n\n10.1 Objective\n\nCalculate a semipartial correlation between Fearful_face_RT and traitanx, controlling for ACS and Age only in the predictor.\n\n\n# Load tidyverse if not already\nlibrary(tidyverse)\n\nError in library(tidyverse): there is no package called 'tidyverse'\n\n# Ensure your data is clean\nsemipartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError in fearful_data %&gt;% dplyr::select(Fearful_face_RT, traitanx, ACS, : could not find function \"%&gt;%\"\n\n# Step 1: Residualize the predictor (traitanx ~ ACS + Age)\nresid_traitanx &lt;- lm(traitanx ~ ACS + Age, data = semipartial_data)$residuals\n\nError in is.data.frame(data): object 'semipartial_data' not found\n\n# Step 2: Compute correlation between raw DV and residualized predictor\nsemipartial_corr &lt;- cor(semipartial_data$Fearful_face_RT, resid_traitanx)\n\nError in is.data.frame(y): object 'resid_traitanx' not found\n\nsemipartial_corr\n\nError: object 'semipartial_corr' not found\n\n\n\n\n\n\n\n\nNote\n\n\n\nInterpretation: This semipartial correlation represents the unique association between trait anxiety and fearful face reaction time, controlling for ACS and Age only in trait anxiety. Unlike partial correlation, it leaves the DV unadjusted.",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
+  },
+  {
+    "objectID": "lab.html#reflection",
+    "href": "lab.html#reflection",
+    "title": "PS53011C/PS71020E Lab Worksheet",
+    "section": "11 Reflection",
+    "text": "11 Reflection\n\nHow does anxiety influence reaction time to fearful faces?\nDoes attentional control modify this relationship?\nAre the findings specific to fearful stimuli, or would they generalize to other emotional expressions?\n\n\nReview your code and interpretations. Cross-reference with theoretical models on anxiety and attentional control.",
+    "crumbs": [
+      "Home",
+      "Lab Worksheet example"
+    ]
   }
 ]
