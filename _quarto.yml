@@ -11,8 +11,8 @@ website:
     - href: webexercises.qmd
       text: Webexercises Demo
     - href: iframeslides.qmd
-      text: embedded slides
-      
+      text: Embedded Slides
+
 format:
   html:
     theme:

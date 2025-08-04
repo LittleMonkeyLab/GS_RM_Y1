@@ -7,7 +7,7 @@ Here are some slides from a .qmd file
 <div>
 
 ```{=html}
-<iframe class="slide-deck" src="placeholders/placeholderslidesqmd.qmd"></iframe>
+<iframe class="slide-deck" src="placeholders/"></iframe>
 ```
 
 </div>
