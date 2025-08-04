@@ -6,17 +6,21 @@ website:
     left:
     - href: index.qmd
       text: Home
-    - href: webr.qmd
-      text: Webr Demo
-    - href: webexercises.qmd
-      text: Webexercises Demo
-    - href: iframeslides.qmd
-      text: Embedded Slides
+    - href: demos/*
+      text: Demonstrations
+
 
   sidebar: 
     contents: 
-    - href: lab.qmd
-      text: Lab Worksheet example
+    - section: "Week 01"
+    - href: worksheets/worksheet01/lab.qmd
+      text: Lab Worksheet Week 01
+    - href: week01/01-ttests.qmd
+      text: Week 01 Reading
+    - href: week01/lab.qmd
+      text: Week 01 Lab
+    - href: week01/dataskills.qmd
+      text: Week 01 DataSkills
 
 format:
   html:
@@ -35,3 +39,4 @@ format:
     toc: true
     toc-depth: 2
     include-after-body: include/webex.js
+    embed-resources: true
