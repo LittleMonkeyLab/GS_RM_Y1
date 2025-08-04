@@ -53,7 +53,7 @@
     "href": "webexercises.html#longer-mcqs",
     "title": "Webexercises",
     "section": "Longer MCQs",
-    "text": "Longer MCQs\nWhich of the following best describes the “Truth-Default Theory” in deception research?\n\n The theory that humans are naturally inclined to always tell the truth The theory that humans tend to believe others are telling the truth unless given reason to think otherwise The theory that truth-telling is easier and requires less cognitive effort than lying The theory that cultural norms universally prioritize truthfulness over deception\n\nWhat is the primary focus of Interpersonal Deception Theory (IDT)?\n\n The dynamic interaction between the deceiver and the target of deception The psychological motivations that drive individuals to engage in deceptive behavior The neurological processes involved in creating and maintaining a lie The cultural variations in perceptions and acceptance of deceptive practices"
+    "text": "Longer MCQs\nWhich of the following best describes the “Truth-Default Theory” in deception research?\n\n The theory that humans are naturally inclined to always tell the truth The theory that humans tend to believe others are telling the truth unless given reason to think otherwise The theory that truth-telling is easier and requires less cognitive effort than lying The theory that cultural norms universally prioritize truthfulness over deception\n\nWhat is the primary focus of Interpersonal Deception Theory (IDT)?\n\n The neurological processes involved in creating and maintaining a lie The dynamic interaction between the deceiver and the target of deception The cultural variations in perceptions and acceptance of deceptive practices The psychological motivations that drive individuals to engage in deceptive behavior"
   },
   {
     "objectID": "webexercises.html#checked-sections",
@@ -103,7 +103,7 @@
     "href": "lab.html#materials",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "3 Materials",
-    "text": "3 Materials\n\nSoftware: R (Tidyverse package)\nDataset: {{&lt; downloadthis data/fearful_faces.csv dname=fearful_faces label=\"Download the fearful_faces data\" icon=database-fill-down type=info class=data-button id=fearful_faces &gt;}}\n\n\nlibrary(tidyverse)",
+    "text": "3 Materials\n\nSoftware: R (Tidyverse package)\nDataset:  Download the fearful_faces data \n\n\nlibrary(tidyverse)",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -125,7 +125,7 @@
     "href": "lab.html#task-1-descriptive-statistics-and-visualisation",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "5 Task 1: Descriptive Statistics and Visualisation",
-    "text": "5 Task 1: Descriptive Statistics and Visualisation\n\nLoad the dataset\nCreate summary statistics and visualizations for RT, traitanx, ACS, and Age.\n\n\nfearful_data &lt;- read_csv(\"data/fearful_faces.csv\")\n\nError: 'data/fearful_faces.csv' does not exist in current working directory ('/home/runner/work/GS_RM_Y1/GS_RM_Y1').\n\nfearful_data %&gt;%\n  summarise(across(c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), list(mean = mean, sd = sd), na.rm = TRUE))\n\nError: object 'fearful_data' not found\n\nfearful_data %&gt;%\n  pivot_longer(cols = c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), names_to = \"variable\", values_to = \"value\") %&gt;%\n  ggplot(aes(x = value)) +\n  geom_histogram(bins = 30, fill = \"steelblue\", color = \"white\") +\n  facet_wrap(~ variable, scales = \"free\") +\n  theme_minimal()\n\nError: object 'fearful_data' not found",
+    "text": "5 Task 1: Descriptive Statistics and Visualisation\n\nLoad the dataset\nCreate summary statistics and visualizations for RT, traitanx, ACS, and Age.\n\n\nfearful_data &lt;- read_csv(\"data/fearful_faces.csv\")\n\nfearful_data %&gt;%\n  summarise(across(c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), list(mean = mean, sd = sd), na.rm = TRUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFearful_face_RT_mean\nFearful_face_RT_sd\nHappy_face_RT_mean\nHappy_face_RT_sd\ntraitanx_mean\ntraitanx_sd\nACS_mean\nACS_sd\nAge_mean\nAge_sd\n\n\n\n\n0.4913926\n0.0603538\n0.4889262\n0.0599826\n41.67532\n10.24238\n50.19737\n8.294608\n23.38462\n7.047576\n\n\n\n\n\nfearful_data %&gt;%\n  pivot_longer(cols = c(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), names_to = \"variable\", values_to = \"value\") %&gt;%\n  ggplot(aes(x = value)) +\n  geom_histogram(bins = 30, fill = \"steelblue\", color = \"white\") +\n  facet_wrap(~ variable, scales = \"free\") +\n  theme_minimal()",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -136,7 +136,7 @@
     "href": "lab.html#task-2-correlation-analysis",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "6 Task 2: Correlation Analysis",
-    "text": "6 Task 2: Correlation Analysis\n\nCompute a correlation matrix\nVisualize relationships using scatterplots\n\n\nfearful_data %&gt;%\n  select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age) %&gt;%\n  cor(use = \"complete.obs\") %&gt;%\n  round(2)\n\nError: object 'fearful_data' not found\n\npairs(fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), main = \"Scatterplot Matrix\")\n\nError: object 'fearful_data' not found",
+    "text": "6 Task 2: Correlation Analysis\n\nCompute a correlation matrix\nVisualize relationships using scatterplots\n\n\nfearful_data %&gt;%\n  select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age) %&gt;%\n  cor(use = \"complete.obs\") %&gt;%\n  round(2)\n\n                Fearful_face_RT Happy_face_RT traitanx   ACS   Age\nFearful_face_RT            1.00          0.96    -0.33  0.18  0.04\nHappy_face_RT              0.96          1.00    -0.37  0.14  0.02\ntraitanx                  -0.33         -0.37     1.00 -0.36 -0.14\nACS                        0.18          0.14    -0.36  1.00  0.36\nAge                        0.04          0.02    -0.14  0.36  1.00\n\npairs(fearful_data %&gt;% select(Fearful_face_RT, Happy_face_RT, traitanx, ACS, Age), main = \"Scatterplot Matrix\")",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -147,7 +147,7 @@
     "href": "lab.html#task-3-multiple-regression",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "7 Task 3: Multiple Regression",
-    "text": "7 Task 3: Multiple Regression\n\nConduct a multiple regression predicting Fearful_face_RT from traitanx, ACS, and Age.\n\n\nmodel &lt;- lm(Fearful_face_RT ~ traitanx + ACS + Age, data = fearful_data)\n\nError in eval(mf, parent.frame()): object 'fearful_data' not found\n\nsummary(model)\n\nError: object 'model' not found",
+    "text": "7 Task 3: Multiple Regression\n\nConduct a multiple regression predicting Fearful_face_RT from traitanx, ACS, and Age.\n\n\nmodel &lt;- lm(Fearful_face_RT ~ traitanx + ACS + Age, data = fearful_data)\nsummary(model)\n\n\nCall:\nlm(formula = Fearful_face_RT ~ traitanx + ACS + Age, data = fearful_data)\n\nResiduals:\n      Min        1Q    Median        3Q       Max \n-0.105742 -0.043660 -0.002261  0.044587  0.116670 \n\nCoefficients:\n              Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  0.5470081  0.0637205   8.584  1.9e-12 ***\ntraitanx    -0.0018929  0.0007492  -2.527   0.0138 *  \nACS          0.0005506  0.0009446   0.583   0.5619    \nAge         -0.0002299  0.0010605  -0.217   0.8290    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.05698 on 68 degrees of freedom\n  (17931 observations deleted due to missingness)\nMultiple R-squared:  0.1149,    Adjusted R-squared:  0.07587 \nF-statistic: 2.943 on 3 and 68 DF,  p-value: 0.0391",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -158,7 +158,7 @@
     "href": "lab.html#task-4-model-diagnostics",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "8 Task 4: Model Diagnostics",
-    "text": "8 Task 4: Model Diagnostics\n\nCheck linear regression assumptions.\n\n\npar(mfrow = c(2, 2))\nplot(model)\n\nError: object 'model' not found",
+    "text": "8 Task 4: Model Diagnostics\n\nCheck linear regression assumptions.\n\n\npar(mfrow = c(2, 2))\nplot(model)",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -169,7 +169,7 @@
     "href": "lab.html#task-5-partial-and-semipartial-correlations",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "9 Task 5: Partial and Semipartial Correlations",
-    "text": "9 Task 5: Partial and Semipartial Correlations\n\n# Load required libraries\nlibrary(tidyverse)\nlibrary(ppcor)\n\n\n# Calculate partial correlations\npartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError: object 'fearful_data' not found\n\npcor_result &lt;- pcor(partial_data, method = \"pearson\")\n\nError: object 'partial_data' not found\n\npcor_result\n\nError: object 'pcor_result' not found",
+    "text": "9 Task 5: Partial and Semipartial Correlations\n\n# Load required libraries\nlibrary(tidyverse)\nlibrary(ppcor)\n\n\n# Calculate partial correlations\npartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\npcor_result &lt;- pcor(partial_data, method = \"pearson\")\npcor_result\n\n$estimate\n                Fearful_face_RT    traitanx         ACS         Age\nFearful_face_RT      1.00000000 -0.29295465  0.07051172 -0.02627832\ntraitanx            -0.29295465  1.00000000 -0.29776049 -0.02300362\nACS                  0.07051172 -0.29776049  1.00000000  0.33458467\nAge                 -0.02627832 -0.02300362  0.33458467  1.00000000\n\n$p.value\n                Fearful_face_RT   traitanx         ACS         Age\nFearful_face_RT      0.00000000 0.01384887 0.561885102 0.829035513\ntraitanx             0.01384887 0.00000000 0.012298804 0.850075844\nACS                  0.56188510 0.01229880 0.000000000 0.004640019\nAge                  0.82903551 0.85007584 0.004640019 0.000000000\n\n$statistic\n                Fearful_face_RT   traitanx        ACS        Age\nFearful_face_RT       0.0000000 -2.5266180  0.5829054 -0.2167714\ntraitanx             -2.5266180  0.0000000 -2.5720632 -0.1897429\nACS                   0.5829054 -2.5720632  0.0000000  2.9277975\nAge                  -0.2167714 -0.1897429  2.9277975  0.0000000\n\n$n\n[1] 72\n\n$gp\n[1] 2\n\n$method\n[1] \"pearson\"",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
@@ -180,7 +180,7 @@
     "href": "lab.html#task-6-semipartial-part-correlation",
     "title": "PS53011C/PS71020E Lab Worksheet",
     "section": "10 Task 6: Semipartial (Part) Correlation",
-    "text": "10 Task 6: Semipartial (Part) Correlation\n\nThis task explores how to isolate the unique contribution of one predictor (e.g., trait anxiety) to a dependent variable (reaction time), controlling for other variables only in the predictor.\n\n\n10.1 Objective\n\nCalculate a semipartial correlation between Fearful_face_RT and traitanx, controlling for ACS and Age only in the predictor.\n\n\n# Load tidyverse if not already\nlibrary(tidyverse)\n\n# Ensure your data is clean\nsemipartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\nError: object 'fearful_data' not found\n\n# Step 1: Residualize the predictor (traitanx ~ ACS + Age)\nresid_traitanx &lt;- lm(traitanx ~ ACS + Age, data = semipartial_data)$residuals\n\nError in eval(mf, parent.frame()): object 'semipartial_data' not found\n\n# Step 2: Compute correlation between raw DV and residualized predictor\nsemipartial_corr &lt;- cor(semipartial_data$Fearful_face_RT, resid_traitanx)\n\nError: object 'resid_traitanx' not found\n\nsemipartial_corr\n\nError: object 'semipartial_corr' not found\n\n\n\n\n\n\n\n\nNote\n\n\n\nInterpretation: This semipartial correlation represents the unique association between trait anxiety and fearful face reaction time, controlling for ACS and Age only in trait anxiety. Unlike partial correlation, it leaves the DV unadjusted.",
+    "text": "10 Task 6: Semipartial (Part) Correlation\n\nThis task explores how to isolate the unique contribution of one predictor (e.g., trait anxiety) to a dependent variable (reaction time), controlling for other variables only in the predictor.\n\n\n10.1 Objective\n\nCalculate a semipartial correlation between Fearful_face_RT and traitanx, controlling for ACS and Age only in the predictor.\n\n\n# Load tidyverse if not already\nlibrary(tidyverse)\n\n# Ensure your data is clean\nsemipartial_data &lt;- fearful_data %&gt;%\n  dplyr::select(Fearful_face_RT, traitanx, ACS, Age) %&gt;%\n  drop_na()\n\n# Step 1: Residualize the predictor (traitanx ~ ACS + Age)\nresid_traitanx &lt;- lm(traitanx ~ ACS + Age, data = semipartial_data)$residuals\n\n# Step 2: Compute correlation between raw DV and residualized predictor\nsemipartial_corr &lt;- cor(semipartial_data$Fearful_face_RT, resid_traitanx)\nsemipartial_corr\n\n[1] -0.2882545\n\n\n\n\n\n\n\n\nNote\n\n\n\nInterpretation: This semipartial correlation represents the unique association between trait anxiety and fearful face reaction time, controlling for ACS and Age only in trait anxiety. Unlike partial correlation, it leaves the DV unadjusted.",
     "crumbs": [
       "Home",
       "Lab Worksheet example"
