@@ -73,7 +73,7 @@ This week's lab will explore multiple regression using tidyverse principles!
 1. Conduct simple and multiple linear regression analyses using R and the Tidyverse.  
 2. Explore relationships between regression coefficients and correlation measures.  
 3. Assess assumptions of linear regression including normality, linearity, and multicollinearity.  
-4. Compute and interpret simple, partial, and semipartial correlations in R.
+4. Compute and interpret simple, partial, and semipartial correlations in R. 
 :::
 
 ---
