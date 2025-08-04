@@ -10,6 +10,9 @@ website:
       text: Webr Demo
     - href: webexercises.qmd
       text: Webexercises Demo
+    - href: iframeslides.qmd
+      text: embedded slides
+      
 format:
   html:
     theme:

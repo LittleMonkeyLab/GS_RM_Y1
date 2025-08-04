@@ -1,0 +1,23 @@
+---
+title: "Embedded Slides"
+format: html
+---
+
+Here are some slides from a .qmd file
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="placeholders/placeholderslidesqmd.qmd"></iframe>
+```
+
+</div>
+
+or maybe here are some slides (as html)
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="placeholders/placeholderslides.html"></iframe>
+```
+
+</div>
