@@ -13,6 +13,11 @@ website:
     - href: iframeslides.qmd
       text: Embedded Slides
 
+  sidebar: 
+    contents: 
+    - href: lab.qmd
+      text: Lab Worksheet example
+
 format:
   html:
     theme:
