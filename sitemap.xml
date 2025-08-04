@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/iframeslides.html</loc>
-    <lastmod>2025-08-04T14:32:10.201Z</lastmod>
+    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/week01/dataskills.html</loc>
+    <lastmod>2025-08-04T15:46:30.701Z</lastmod>
   </url>
   <url>
-    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/webr.html</loc>
-    <lastmod>2025-08-04T14:32:10.218Z</lastmod>
+    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/week01/01-ttests.html</loc>
+    <lastmod>2025-08-04T15:46:30.698Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/worksheets/worksheet01/lab.html</loc>
+    <lastmod>2025-08-04T15:46:30.703Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/demos/iframeslides.html</loc>
+    <lastmod>2025-08-04T15:46:30.680Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/demos/codeoptions.html</loc>
+    <lastmod>2025-08-04T15:46:30.680Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/demos/webexercises.html</loc>
+    <lastmod>2025-08-04T15:46:30.681Z</lastmod>
+  </url>
+  <url>
+    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/demos/webr.html</loc>
+    <lastmod>2025-08-04T15:46:30.681Z</lastmod>
   </url>
   <url>
     <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/index.html</loc>
-    <lastmod>2025-08-04T14:32:10.201Z</lastmod>
-  </url>
-  <url>
-    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/webexercises.html</loc>
-    <lastmod>2025-08-04T14:32:10.218Z</lastmod>
+    <lastmod>2025-08-04T15:46:30.681Z</lastmod>
   </url>
   <url>
     <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/placeholders/placeholderslidesqmd.html</loc>
-    <lastmod>2025-08-04T14:32:10.217Z</lastmod>
+    <lastmod>2025-08-04T15:46:30.696Z</lastmod>
   </url>
   <url>
-    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/lab.html</loc>
-    <lastmod>2025-08-04T14:32:10.201Z</lastmod>
+    <loc>https://LittleMonkeyLab.github.io/GS_RM_Y1/week01/lab.html</loc>
+    <lastmod>2025-08-04T15:46:30.701Z</lastmod>
   </url>
 </urlset>
