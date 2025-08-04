@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "webr.html",
-    "href": "webr.html",
-    "title": "Webr",
+    "objectID": "iframeslides.html",
+    "href": "iframeslides.html",
+    "title": "Embedded Slides",
     "section": "",
-    "text": "This is a webR-enabled code cell in a Quarto HTML document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Here are some slides from a .qmd file\n\n\n\nor maybe here are some slides (as html)"
+  },
+  {
+    "objectID": "placeholders/placeholderslidesqmd.html#title-2",
+    "href": "placeholders/placeholderslidesqmd.html#title-2",
+    "title": "placeholderslidesqmd",
+    "section": "Title 2",
+    "text": "Title 2\nbody content"
   },
   {
     "objectID": "webexercises.html",
@@ -39,7 +46,7 @@
     "href": "webexercises.html#longer-mcqs",
     "title": "Webexercises",
     "section": "Longer MCQs",
-    "text": "Longer MCQs\nWhich of the following best describes the “Truth-Default Theory” in deception research?\n\n The theory that humans are naturally inclined to always tell the truth The theory that humans tend to believe others are telling the truth unless given reason to think otherwise The theory that truth-telling is easier and requires less cognitive effort than lying The theory that cultural norms universally prioritize truthfulness over deception\n\nWhat is the primary focus of Interpersonal Deception Theory (IDT)?\n\n The neurological processes involved in creating and maintaining a lie The cultural variations in perceptions and acceptance of deceptive practices The psychological motivations that drive individuals to engage in deceptive behavior The dynamic interaction between the deceiver and the target of deception"
+    "text": "Longer MCQs\nWhich of the following best describes the “Truth-Default Theory” in deception research?\n\n The theory that humans are naturally inclined to always tell the truth The theory that humans tend to believe others are telling the truth unless given reason to think otherwise The theory that truth-telling is easier and requires less cognitive effort than lying The theory that cultural norms universally prioritize truthfulness over deception\n\nWhat is the primary focus of Interpersonal Deception Theory (IDT)?\n\n The cultural variations in perceptions and acceptance of deceptive practices The neurological processes involved in creating and maintaining a lie The psychological motivations that drive individuals to engage in deceptive behavior The dynamic interaction between the deceiver and the target of deception"
   },
   {
     "objectID": "webexercises.html#checked-sections",
@@ -61,5 +68,12 @@
     "title": "GoldRMy1",
     "section": "",
     "text": "This is a Quarto website, my dudes.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "webr.html",
+    "href": "webr.html",
+    "title": "Webr",
+    "section": "",
+    "text": "This is a webR-enabled code cell in a Quarto HTML document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   }
 ]
