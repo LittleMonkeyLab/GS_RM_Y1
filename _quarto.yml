@@ -3,26 +3,40 @@ project:
 website:
   title: GoldRMy1
   navbar:
+    background: primary
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-
+      - text: "Home"
+        href: index.qmd
+      - text: "Lectures"
+        href: lectures.qmd
+      - text: "Labs"
+        href: labs.qmd
+      - text: "DataSkills"
+        href: dataskills.qmd
+      - text: "R Resources"
+        href: r-resources.qmd
 
 
   sidebar: 
-    collapse-level: 1
+    style: "docked"
+    search: true
+    collapse-level: 0
     contents: 
-    - section: "Week 01"
-    - href: worksheets/worksheet01/lab.qmd
-      text: Lab Worksheet Week 01
-    - href: week01/01-ttests.qmd
-      text: Week 01 Reading
-    - href: week01/lab.qmd
-      text: Week 01 Lab
-    - href: week01/dataskills.qmd
-      text: Week 01 DataSkills
-    - section: "Demonstrations"
-    - auto: "demos/*-demo.qmd"
+      - section: "Week 01"
+        contents:
+          - href: worksheets/worksheet01/lab.qmd
+            text: Lab Worksheet Week 01
+          - href: week01/01-ttests.qmd
+            text: Week 01 Reading
+          - href: week01/lab.qmd
+            text: Week 01 Lab
+          - href: week01/dataskills.qmd
+            text: Week 01 DataSkills
+      - text: "---"
+      - section: "Demonstrations"
+        contents:
+          - auto: "demos/*-demo.qmd"
 
 format:
   html:
