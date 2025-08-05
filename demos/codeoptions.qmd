@@ -95,8 +95,8 @@ penguins |>                                      # <1>
 
 ## Native Quarto
 
-![](assets/dummypdf.pdf)
+![](../assets/dummypdf.pdf)
 
-## With size spec ![](assets/dummypdf.pdf){width="60%" height="400"}
+## With size spec ![](../assets/dummypdf.pdf){width="60%" height="400"}
 
 

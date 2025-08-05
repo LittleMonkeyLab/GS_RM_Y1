@@ -1,17 +1,39 @@
 ---
-title: "quarto-live"
+title: Introduction
+subtitle: WebAssembly powered code blocks and exercises for Quarto HTML documents
 format: live-html
 engine: knitr
-
+toc: true
 ---
 
-{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
 
-This is a quarto-live -enabled code cell in a Quarto HTML document.
+Embed WebAssembly powered code blocks and exercises for both the R and Python languages into [Quarto](https://quarto.org) documents with HTML-based output formats.
+
+## Quarto Live
+
+The `quarto-live` extension provides:
+
+  * Interactive R and Python code blocks.
+
+  * Exercises with optional hints, solutions, and custom grading algorithms.
+
+  * Rich output for showing client-side interactive plots, images, and HTML widgets.
+
+  * A [CodeMirror](https://codemirror.net)-based text editor with automatic theming, syntax highlighting, and auto-complete.
+
+  * Integration with OJS so that interactive code cells update reactively with `ojs` cells.
+
+The [webR](https://docs.r-wasm.org/webr/latest/) and [Pyodide](https://pyodide.org/en/stable/) WebAssembly engines are used to dynamically execute code in the user's web browser, so only a static web service (such as [GitHub Pages](https://pages.github.com), [Quarto Pub](https://quartopub.com), or [Netlify](https://www.netlify.com)) is required.
+
+### Demo
 
 ```{webr}
-fit = lm(mpg ~ am, data = mtcars)
-summary(fit)
-plot(fit)
+for (x in 1:5) {
+  print(x ** 2)
+}
 ```
 
+## Next steps
+
+Work through

@@ -5,7 +5,7 @@ format: html
 
 Here are some slides from an html file (embedded resources)
 <div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="placeholders/lab_slides.html" 
+  <iframe src="../placeholders/lab_slides.html" 
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
           allowfullscreen
           loading="lazy">
@@ -15,4 +15,4 @@ Here are some slides from an html file (embedded resources)
 
 
 using slide-deck short-version
-<iframe class="slide-deck" src="placeholders/lab_slides.html"></iframe>
+<iframe class="slide-deck" src="../placeholders/lab_slides.html"></iframe>

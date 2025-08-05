@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quarto-live – GoldRMy1</title>
+<title>Introduction – GoldRMy1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../demos/quarto-live.html">
- <span class="dropdown-text">quarto-live</span></a>
+ <span class="dropdown-text">Introduction</span></a>
   </li>  
     </ul>
   </li>
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">quarto-live</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Introduction</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -175,13 +175,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#quarto-live" id="toc-quarto-live" class="nav-link active" data-scroll-target="#quarto-live">Quarto Live</a>
+  <ul class="collapse">
+  <li><a href="#demo" id="toc-demo" class="nav-link" data-scroll-target="#demo">Demo</a></li>
+  </ul></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next steps</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">quarto-live</h1>
+<h1 class="title">Introduction</h1>
+<p class="subtitle lead">WebAssembly powered code blocks and exercises for Quarto HTML documents</p>
 </div>
 
 
@@ -198,17 +211,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a webR-enabled code cell in a Quarto HTML document.</p>
+<p>Embed WebAssembly powered code blocks and exercises for both the R and Python languages into <a href="https://quarto.org">Quarto</a> documents with HTML-based output formats.</p>
+<section id="quarto-live" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-live">Quarto Live</h2>
+<p>The <code>quarto-live</code> extension provides:</p>
+<ul>
+<li><p>Interactive R and Python code blocks.</p></li>
+<li><p>Exercises with optional hints, solutions, and custom grading algorithms.</p></li>
+<li><p>Rich output for showing client-side interactive plots, images, and HTML widgets.</p></li>
+<li><p>A <a href="https://codemirror.net">CodeMirror</a>-based text editor with automatic theming, syntax highlighting, and auto-complete.</p></li>
+<li><p>Integration with OJS so that interactive code cells update reactively with <code>ojs</code> cells.</p></li>
+</ul>
+<p>The <a href="https://docs.r-wasm.org/webr/latest/">webR</a> and <a href="https://pyodide.org/en/stable/">Pyodide</a> WebAssembly engines are used to dynamically execute code in the user’s web browser, so only a static web service (such as <a href="https://pages.github.com">GitHub Pages</a>, <a href="https://quartopub.com">Quarto Pub</a>, or <a href="https://www.netlify.com">Netlify</a>) is required.</p>
+<section id="demo" class="level3">
+<h3 class="anchored" data-anchor-id="demo">Demo</h3>
 <div class="cell">
 <div>
 <div id="webr-1" class="exercise-cell">
 
 </div>
 <script type="webr-1-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiZml0ID0gbG0obXBnIH4gYW0sIGRhdGEgPSBtdGNhcnMpXG5cbnN1bW1hcnkoZml0KSJ9
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiZm9yICh4IGluIDE6NSkge1xuICBwcmludCh4ICoqIDIpXG59In0=
 </script>
 </div>
 </div>
+</section>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next steps</h2>
+<p>Work through</p>
 
 
 <script type="webr-data">
@@ -228,6 +259,7 @@ eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0xIiwiaW5saW5lIjpmYWxzZSwibWV0
 <script type="vfs-file">
 W10=
 </script>
+</section>
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
