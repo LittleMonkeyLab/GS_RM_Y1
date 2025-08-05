@@ -4,18 +4,13 @@ website:
   title: GoldRMy1
   navbar:
     left:
-      - text: "Demonstrations"
-        menu:
-          - demos/codeoptions.qmd
-          - demos/iframeslides.qmd
-          - demos/webexercises.qmd
-          - demos/quarto-live.qmd
       - href: index.qmd
         text: Home
 
 
 
   sidebar: 
+    collapse-level: 1
     contents: 
     - section: "Week 01"
     - href: worksheets/worksheet01/lab.qmd
@@ -26,6 +21,8 @@ website:
       text: Week 01 Lab
     - href: week01/dataskills.qmd
       text: Week 01 DataSkills
+    - section: "Demonstrations"
+    - auto: "demos/*-demo.qmd"
 
 format:
   html:
