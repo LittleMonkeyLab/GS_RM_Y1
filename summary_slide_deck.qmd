@@ -1,0 +1,176 @@
+---
+title: "Summary Slide Deck"
+format: html
+---
+
+## Recapitulating the Basics in R  
+**Data Skills Refresher – 2025-02-13**
+
+We aim to reinforce key R coding skills covered so far in **Data Skills**, helping you gain confidence in:
+
+- Clearing the workspace  
+- Importing data  
+- Checking basic properties of data  
+- Plotting and running basic analyses  
+
+🔗 See R scripts on the VLE:  
+<https://learn.gold.ac.uk/course/view.php?id=30260>
+
+---
+
+## Clearing the Workspace
+
+Before starting new work, it's often helpful to clear residual variables.
+
+````r
+rm(list = ls())
+````
+
+This removes all existing objects from the environment.
+
+---
+
+## Importing Data – Excel
+
+If using **RStudio Server**, load Excel data with:
+
+````r
+library(readxl)
+my_data <- read_excel("your_file.xlsx")
+````
+
+If using **local R**, adjust the file path appropriately:
+
+````r
+my_data <- read_excel("C:/Users/YourName/Documents/your_file.xlsx")
+````
+
+🔗 More options:  
+<https://www.sthda.com/english/wiki/running-rstudio-and-setting-up-your-working-directory-easy-r-programming>
+
+---
+
+## Importing Data – CSV
+
+No special library needed for CSV:
+
+````r
+my_data <- read.csv("your_file.csv")
+````
+
+Ensure the file path is correct relative to your working directory.
+
+---
+
+## Checking the Data
+
+Explore your dataset with these built-in functions:
+
+````r
+summary(my_data)
+str(my_data)
+````
+
+- `summary()` gives basic statistics.  
+- `str()` shows variable types and structure.
+
+---
+
+## Accessing Data Columns
+
+Use the **$ symbol** to access specific variables:
+
+````r
+my_data$EXTRAVERSION
+````
+
+---
+
+## Correlation Analysis
+
+Calculate the correlation between two variables:
+
+````r
+cor.test(my_data$EXTRAVERSION, my_data$MEDIA.USE)
+````
+
+### Output includes:
+- Correlation coefficient (**r**) from -1 to +1  
+- **p-value**: tests if r = 0  
+- **Confidence interval** for the estimate
+
+---
+
+## Linear Regression
+
+Fit a simple regression model:
+
+````r
+model <- lm(EXTRAVERSION ~ MEDIA.USE, data = my_data)
+summary(model)
+````
+
+### Output provides:
+- **Coefficients** (intercept & slope)  
+- **R-squared**: variance explained  
+- **p-values**: significance of predictors
+
+---
+
+## Basic Scatter Plot
+
+````r
+plot(my_data$MEDIA.USE, my_data$EXTRAVERSION,
+     col = "blue",
+     xlab = "Media Use",
+     ylab = "Extraversion")
+````
+
+---
+
+## Customising Plot Labels
+
+- Variable names are **case-sensitive**:  
+  ✅ `my_data$EXTRAVERSION`  
+  ❌ `my_data$extraversion`
+
+- Custom y-axis label:
+
+````r
+ylab = "Extraversion"
+````
+
+Or even:
+
+````r
+ylab = "My Cat"
+````
+
+---
+
+## Customising Plot Colours
+
+Change the colour to any base or HEX colour:
+
+````r
+col = "#9226c5"  # purple tone
+````
+
+🎨 Try this HEX picker:  
+<https://imagecolorpicker.com/color-code/9226c5>
+
+---
+
+## Summary
+
+Today we reviewed:
+
+- How to clean and import data in R  
+- Summarising datasets  
+- Running correlation and regression analyses  
+- Creating and customising scatter plots  
+
+Keep exploring the **R scripts** on the VLE for more practice.  
+You're making great progress!
+
+---

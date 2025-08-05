@@ -4,10 +4,15 @@ website:
   title: GoldRMy1
   navbar:
     left:
-    - href: index.qmd
-      text: Home
-    - href: demos/*
-      text: Demonstrations
+      - text: "Demonstrations"
+        menu:
+          - demos/codeoptions.qmd
+          - demos/iframeslides.qmd
+          - demos/webexercises.qmd
+          - demos/quarto-live.qmd
+      - href: index.qmd
+        text: Home
+
 
 
   sidebar: 

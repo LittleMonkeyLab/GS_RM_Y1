@@ -99,16 +99,4 @@ penguins |>                                      # <1>
 
 ## With size spec ![](assets/dummypdf.pdf){width="60%" height="400"}
 
-## With embedpdf extension x3 from raw file
-{{< pdf ./assets/dummypdf.pdf >}}
 
-raw file with size options
-{{< pdf ./assets/dummypdf.pdf width=100% height=800 >}}
-
-url with ""
-{{< pdf "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf" >}}
-<<<<<<< HEAD
-
-{{< pdf "https://interrm.littlemonkeylab.com/week01/data/dummypdf.pdf" >}}
-=======
->>>>>>> 945ad51f57d64470c9643cb73b8bd6151555b866
