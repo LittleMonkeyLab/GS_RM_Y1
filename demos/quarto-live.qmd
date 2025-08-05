@@ -5,11 +5,13 @@ engine: knitr
 
 ---
 
-This is a webR-enabled code cell in a Quarto HTML document.
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+This is a quarto-live -enabled code cell in a Quarto HTML document.
 
 ```{webr}
 fit = lm(mpg ~ am, data = mtcars)
-
 summary(fit)
+plot(fit)
 ```
 
