@@ -1,0 +1,16 @@
+---
+title: "Lecture 01 Placeholder"
+format: 
+  revealjs:
+    embed-resources: true
+---
+
+# Big Title for placeholder
+
+## Second heading
+
+body content
+
+## Third heading
+
+is this the second slide?

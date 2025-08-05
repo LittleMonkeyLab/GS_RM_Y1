@@ -1,18 +1,47 @@
 ---
 title: "Embedded Slides"
 format: html
+resources:
+  - placeholders/lab_slides.html
 ---
 
-Here are some slides from an html file (embedded resources)
+Here are some slides from an html file (embedded resources)1
+
 <div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="../placeholders/lab_slides.html" 
+  <iframe src="../placeholders/lab_slides.html"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-          allowfullscreen
-          loading="lazy">
+          allowfullscreen>
   </iframe>
 </div>
 
-
+2
 
 using slide-deck short-version
-<iframe class="slide-deck" src="../placeholders/lab_slides.html"></iframe>
+<iframe class="slide-deck" src="../placeholders/lab_slides.html""></iframe>
+
+3
+
+:::{.embed}
+<iframe src="../placeholders/lab_slides.html" width="100%" height="500px"></iframe>
+:::
+
+## Embedded Slides (Works Locally and on Web) 4
+
+```{=html}
+<div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="../placeholders/lab_slides.html" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          allowfullscreen>
+  </iframe>
+</div>
+
+<iframe 
+  src="https://quarto.org/docs/presentations/revealjs/demo.html" 
+  allow="fullscreen; clipboard-read; clipboard-write"
+  allowfullscreen
+  referrerpolicy="no-referrer"
+  sandbox="allow-scripts allow-same-origin"
+  style="width: 100%; height: 600px; border: none;">
+</iframe>
+
+/Users/gordonwright/GS_RM_Y1/placeholders/lab_slides.html
