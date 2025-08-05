@@ -97,6 +97,8 @@ penguins |>                                      # <1>
 
 ![](../assets/dummypdf.pdf)
 
-## With size spec ![](../assets/dummypdf.pdf){width="60%" height="400"}
+## With size spec 
+
+![](../assets/dummypdf.pdf){width="60%" height="400"}
 
 
