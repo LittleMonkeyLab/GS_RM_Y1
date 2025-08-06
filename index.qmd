@@ -5,3 +5,39 @@ title: "GoldRMy1"
 This is a Quarto website, my dudes.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+## Embed Code
+
+Place the following code inside of the Quarto Document: 
+
+````html
+<style>
+.slide-deck {
+    border: 3px solid #dee2e6;
+    width: 100%;
+    height: 475px;
+}
+</style>
+
+<div>
+```{=html}
+<iframe class="slide-deck" src="lectures/lecture01.qmd"></iframe>
+```
+</div>
+````
+
+````html
+<style>
+.slide-deck {
+    border: 3px solid #dee2e6;
+    width: 100%;
+    height: 475px;
+}
+</style>
+
+<div>
+```{=html}
+<iframe class="slide-deck" src="lectures/lecture01.html"></iframe>
+```
+</div>
+````
