@@ -15,8 +15,5 @@ Embedding of local slides from another directory relative to /site
 
 <details>
   <summary>Solution</summary>
-```{r}
-Here is some text
-```
-  
+And this is just some content.
 </details>
