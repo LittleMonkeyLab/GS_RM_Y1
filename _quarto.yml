@@ -33,16 +33,14 @@ website:
     search: true
     collapse-level: 0
     contents: 
-      - section: "Week 01"
+      - section: "Week 16"
         contents:
-          - href: worksheets/worksheet01/lab.qmd
-            text: Lab Worksheet Week 01
-          - href: week01/01-ttests.qmd
-            text: Week 01 Reading
-          - href: week01/lab.qmd
-            text: Week 01 Lab
-          - href: week01/dataskills.qmd
-            text: Week 01 DataSkills
+          - href: lectures/lecture16.qmd
+            text: Week 16 Lecture - Multiple Regression
+          - href: labs/lab16.qmd
+            text: Week 16 Lab - Report Writing Skills
+          - href: dataskills/dataskills16.qmd
+            text: Week 16 DataSkills - Job Success Prediction
       - text: "---"
       - section: "Demonstrations"
         contents:
